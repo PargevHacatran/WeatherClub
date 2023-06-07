@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
+    <title>WeatherClub - сайт с прогнозом погоды</title>
+</head>
+<body>
+
+    <div class="header">
+
+        <h1 class="header__title">Weather<span>Club</span></h1>
+
+        <nav>
+            <li class="tree__days active nav-at-day">Weather for a week</li>
+            <li class="one__day nav-at-day">Weather for a day</li>
+            <li class="hourly__weather nav-at-day">Weather for an hourly</li>
+        </nav>
+
+        <input class="header__input" type="text" placeholder="Enter your city name " />
+    </div>
+
+    <div class="the-most-popular-city">
+        
+        <h2 class="the-most-popular-city__title">Weather in the most popular cities</h2>
+        <p class="the-most-popular-city__subtitle">Сlicked & check the weather in the most popular cities of the world</p>
+
+        <div class="grid">
+            <div class="the-most-popular-city__Moscow gridA">
+                <img src="assets/img/moscow.jpg" alt="Moscow"/>
+                <p class="the-most-popular-city__name1">Russia/
+                                                    <br>Moscow</p>
+            </div>
+    
+            <div class="the-most-popular-city__NewYork gridB">
+                <img src="assets/img/new-york.jpg" alt="New York" />
+                <p class="the-most-popular-city__name2">USA/
+                                                    <br>New York</p>
+            </div>
+    
+            <div class="the-most-popular-city__London gridC">
+                <img src="assets/img/london.jpg" alt="London" />
+                <p class="the-most-popular-city__name3">UK/London</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather__block">
+        <div class="day day1"></div>
+        <div class="day day2"></div>
+        <div class="day day3"></div>
+    </div>
+
+    <div class="hourly-weather">
+        <div class="night__weather"></div>
+        <div class="morning__weather"></div>
+        <div class="day__weather"></div>
+        <div class="evening__weather"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
